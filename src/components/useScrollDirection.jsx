@@ -21,7 +21,6 @@ function useScrollDirection() {
             window.removeEventListener("scroll", updateScrollDirection);
         };
     }, [scrollDirection]);
-
     return scrollDirection;
 }
 

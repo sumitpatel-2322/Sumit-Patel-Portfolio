@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import useScrollDirection from "./useScrollDirection";
-
 function Header() {
   const scrollDirection = useScrollDirection();
   const [isOpen, setIsOpen] = useState(false);
