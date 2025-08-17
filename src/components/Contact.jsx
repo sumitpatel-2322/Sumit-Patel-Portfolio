@@ -34,6 +34,8 @@ function Contact() {
         from_name: formData.name,
         from_email: formData.email,
         message: formData.message,
+        title: "Portfolio Contact",
+        time: new Date().toLocaleString(),
       },
       "2XJtYfKJD7---0frC"        //EmailJS public key
     )
