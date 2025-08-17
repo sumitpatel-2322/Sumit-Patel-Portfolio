@@ -26,7 +26,7 @@ function Intro() {
   return (
     <div
       id="home"
-      className="p-4 pt-6 text-left w-full sm:w-3/4 sm:p-6 md:w-2/3 md:p-8 lg:pt-18 lg:p-12 min-h-screen flex flex-col justify-center scroll-reveal"
+      className="p-4 pt-6 text-left w-full sm:w-3/4 sm:p-6 sm:pt-14 md:w-2/3 md:p-8 md:pt-12 lg:pt-18 lg:p-12 min-h-screen flex flex-col justify-center scroll-reveal"
     >
       <p className="text-xl sm:text-2xl text-text-muted animate-fade-in">
         Hello There 👋
@@ -42,7 +42,9 @@ function Intro() {
       </p>
       <div className="intro-buttons flex flex-wrap gap-4 items-center mt-6">
         <IconsFlex />
-        <button
+      </div>
+      <div className="flex flex-nowrap gap-4 items-center justify-center lg:justify-start md:justify-start mt-8">
+      <button
           onClick={(e) => handleNavClick(e, "myprojects")}
           className="btn-primary"
         >

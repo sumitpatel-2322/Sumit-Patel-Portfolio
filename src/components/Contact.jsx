@@ -2,13 +2,19 @@ import { Mail, MapPin, Send } from 'lucide-react';
 import { useState } from 'react';
 import { LinkedInIcon, GitHubIcon, InstagramIcon } from './icons';
 import useScrollReveal from './useScrollReveal';
+import emailjs from "@emailjs/browser";
+
 function Contact() {
   useScrollReveal();
+
   const [formData, setFormData] = useState({
     name: '',
     email: '',
     message: ''
   });
+
+  const [loading, setLoading] = useState(false);
+  const [status, setStatus] = useState(null);
 
   const handleChange = (e) => {
     setFormData({
@@ -19,8 +25,29 @@ function Contact() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Handle form submission here
-    console.log('Form submitted:', formData);
+    setLoading(true);
+
+    emailjs.send(
+      "service_wdecepg",       //EmailJS service ID
+      "template_vzkvniq",      //EmailJS template ID
+      {
+        from_name: formData.name,
+        from_email: formData.email,
+        message: formData.message,
+      },
+      "2XJtYfKJD7---0frC"        //EmailJS public key
+    )
+    .then(() => {
+      setStatus("Message sent successfully ✅");
+      setFormData({ name: '', email: '', message: '' });
+    })
+    .catch((error) => {
+      console.error("EmailJS error:", error);
+      setStatus("Something went wrong ❌ Try again later.");
+    })
+    .finally(() => {
+      setLoading(false);
+    });
   };
 
   return (
@@ -171,11 +198,18 @@ function Contact() {
 
               <button
                 type="submit"
+                disabled={loading}
                 className="btn-primary w-full flex items-center justify-center gap-2 group"
               >
                 <Send size={16} className="group-hover:translate-x-1 transition-transform duration-200" />
-                Send Message
+                {loading ? "Sending..." : "Send Message"}
               </button>
+
+              {status && (
+                <p className="text-center text-sm mt-2 text-text-secondary">
+                  {status}
+                </p>
+              )}
             </form>
           </div>
         </div>

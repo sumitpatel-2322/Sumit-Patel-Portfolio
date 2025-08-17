@@ -12,6 +12,7 @@
   "dependencies": {
     "@dicebear/collection": "^9.2.4",
     "@dicebear/core": "^9.2.4",
+    "@emailjs/browser": "^4.4.1",
     "@tailwindcss/vite": "^4.1.11",
     "lucide-react": "^0.539.0",
     "react": "^19.1.0",
