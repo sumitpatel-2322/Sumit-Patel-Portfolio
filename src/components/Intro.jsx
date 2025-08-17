@@ -1,7 +1,28 @@
 import IconsFlex from "./IconsFlex";
 import useScrollReveal from "./useScrollReveal";
+
 function Intro() {
   useScrollReveal();
+
+  const smoothScrollTo = (elementId) => {
+    const element = document.getElementById(elementId);
+    if (element) {
+      const headerHeight = 80;
+      const elementPosition = element.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.pageYOffset - headerHeight;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth',
+      });
+    }
+  };
+
+  const handleNavClick = (e, targetId) => {
+    e.preventDefault();
+    smoothScrollTo(targetId);
+  };
+
   return (
     <div
       id="home"
@@ -10,38 +31,29 @@ function Intro() {
       <p className="text-xl sm:text-2xl text-text-muted animate-fade-in">
         Hello There 👋
       </p>
-
       <h1 className="text-4xl sm:text-5xl lg:text-6xl my-2 font-bold">
-        <span className="text-gradient">
-          Sumit Patel
-        </span>
+        <span className="text-gradient">Sumit Patel</span>
       </h1>
-
       <h2 className="text-lg sm:text-xl lg:text-2xl font-medium mb-4 text-text-secondary">
         Aspiring <span className="text-primary font-semibold">Machine Learning Engineer</span> • <span className="text-accent font-semibold">Full-Stack Developer</span>
       </h2>
-
       <p className="max-w-xl text-text-muted leading-relaxed mb-6">
-        Skilled in Full Stack Development and continuously exploring the world
-        of AI & ML to create innovative solutions that bridge technology and user experience.
+        Skilled in Full Stack Development and continuously exploring the world of AI & ML to create innovative solutions that bridge technology and user experience.
       </p>
-
-      <div className="mt-6 flex flex-wrap gap-4 items-center">
+      <div className="intro-buttons flex flex-wrap gap-4 items-center mt-6">
         <IconsFlex />
-        
-        <a
-          href="#myprojects"
-          className="btn-primary inline-block text-center"
+        <button
+          onClick={(e) => handleNavClick(e, "myprojects")}
+          className="btn-primary"
         >
           View Projects
-        </a>
-        
-        <a
-          href="#contact"
-          className="btn-outline inline-block text-center"
+        </button>
+        <button
+          onClick={(e) => handleNavClick(e, "contact")}
+          className="btn-outline"
         >
           Contact Me
-        </a>
+        </button>
       </div>
     </div>
   );
