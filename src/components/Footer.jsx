@@ -41,7 +41,7 @@ function Footer() {
         </div>
 
         {/* Floating Back to Top Button */}
-        <div className="fixed bottom-6 right-6 z-40">
+        {/* <div className="fixed bottom-6 right-6 z-40">
           <a
             href="#home"
             className="w-12 h-12 bg-accent hover:bg-accent-hover rounded-full flex items-center justify-center text-text-primary shadow-lg hover:shadow-xl transition-all duration-300 hover:transform hover:-translate-y-1"
@@ -51,7 +51,7 @@ function Footer() {
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 15l7-7 7 7" />
             </svg>
           </a>
-        </div>
+        </div> */}
       </div>
     </footer>
   );
