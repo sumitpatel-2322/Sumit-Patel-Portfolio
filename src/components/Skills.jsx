@@ -59,6 +59,7 @@ function Skills() {
                   <span className="skill-tag-proficient">Matplotlib</span>
                   <span className="skill-tag-proficient">Scikit-learn</span>
                   <span className="skill-tag-proficient">Pdfplumber</span>
+                  <span className="skill-tag-proficient">NLTK</span>
                 </div>
               </div>
               <div>
@@ -66,7 +67,6 @@ function Skills() {
                   Learning
                 </h4>
                 <div className="flex flex-wrap gap-2">
-                  <span className="skill-tag-learning">NLTK</span>
                   <span className="skill-tag-learning">SpaCy</span>
                   <span className="skill-tag-learning">PyTorch</span>
                   <span className="skill-tag-learning">TensorFlow</span>
