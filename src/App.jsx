@@ -16,7 +16,7 @@ const projects = [
     image: portfolioimg, 
     tech: ['HTML', 'React', 'TailwindCss'],
     github: "https://github.com/sumitpatel",
-    live: "https://sumitpatel.dev"
+    live: "https://sumit-patel-portfolio.vercel.app/"
   },
   { 
     name: "Rankmate", 
@@ -25,6 +25,29 @@ const projects = [
     tech: ['HTML', 'CSS', 'Python', 'Flask', 'pdfplumber', 're(regex)'],
     github: "https://github.com/sumitpatel-2322/Student-ranker",
     live: "https://student-ranker.onrender.com/"
+  },
+  { 
+    name: "Math Score Predictor", 
+    desc: "This project predicts student exam performance (math scores) based on demographic and academic features such as gender, race/ethnicity, parental education, lunch type, test preparation course, reading score, and writing score \nThe model was trained using scikit-learn pipelines with preprocessing, and deployed with a Flask web application on Render. The application provides a UI (index.html & predict.html) where users can input student details and get predictions.", 
+    image: Math_score_predictor, 
+    tech: ['HTML', 'CSS', 'Python','numpy', 'Flask', 'scikit-learn', 'pandas','seaborn','matplotlib'],
+    github: "https://github.com/sumitpatel-2322/Student_perfomance_predictor",
+    live: "https://math-score-predictor-frh6.onrender.com/"
+  },
+  { 
+    name: "Trading Bot", 
+    desc: "A Python trading bot I built during my learning journey! 🚀\n This is my latest project - a trading bot that connects to Binance Futures Testnet. It was super exciting to work with APIs and create both a command-line tool and a web interface!", 
+    image: Trading_bot, 
+    tech: ['streamlit', 'Python', 'python-binance', 'plotly', 'python-dotenv','Binance-API'],
+    github: "https://github.com/sumitpatel-2322/Trading_Bot"
+  },
+  { 
+    name: "Trading Behaviour", 
+    desc: "This project analyzes the relationship between cryptocurrency trader performance and market sentiment using machine learning clustering techniques. I worked with over 211,000 trading transactions from Hyperliquid exchange and Bitcoin Fear & Greed Index data to find patterns that could help understand different types of traders", 
+    image: Cluster_bar_graph, 
+    tech: ['Python','numpy', 'Pandas', 'plotly', 'seaborn','scikit-learn','KMeans clustering'
+    ],
+    github: "https://github.com/sumitpatel-2322/Trading_behaviour"
   }
 ];
 
