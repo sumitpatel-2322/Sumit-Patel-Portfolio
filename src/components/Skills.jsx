@@ -60,7 +60,7 @@ function Skills() {
                   <span className="skill-tag-proficient">Scikit-learn</span>
                   <span className="skill-tag-proficient">Pdfplumber</span>
                   <span className="skill-tag-proficient">NLTK</span>
-                  <span className="skill-tag-Proficient">TensorFlow</span>
+                  <span className="skill-tag-proficient">TensorFlow</span>
                 </div>
               </div>
               <div>
