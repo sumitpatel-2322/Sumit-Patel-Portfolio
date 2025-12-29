@@ -18,7 +18,7 @@ const projects = [
     desc: "This portfolio is one of my project showcasing my front-end Skills", 
     image: portfolioimg, 
     tech: ['HTML', 'React', 'TailwindCss'],
-    github: "https://github.com/sumitpatel",
+    github: "https://github.com/sumitpatel-2322/Sumit-Patel-Portfolio",
     live: "https://sumit-patel-portfolio.vercel.app/"
   },
   { 
