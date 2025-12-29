@@ -15,7 +15,7 @@ import useScrollReveal from './components/useScrollReveal';
 const projects = [
   { 
     name: "Portfolio", 
-    desc: "This portfolio is one of my project showcasing my front-end", 
+    desc: "This portfolio is one of my project showcasing my front-end Skills", 
     image: portfolioimg, 
     tech: ['HTML', 'React', 'TailwindCss'],
     github: "https://github.com/sumitpatel",
@@ -27,7 +27,7 @@ const projects = [
     image: rankmateimg, 
     tech: ['HTML', 'CSS', 'Python', 'Flask', 'pdfplumber', 're(regex)'],
     github: "https://github.com/sumitpatel-2322/Student-ranker",
-    live: "https://student-ranker.onrender.com/"
+    live: "https://rankmate.onrender.com/"
   },
   { 
     name: "Trading Bot", 
