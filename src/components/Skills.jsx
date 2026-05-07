@@ -61,15 +61,8 @@ function Skills() {
                   <span className="skill-tag-proficient">Pdfplumber</span>
                   <span className="skill-tag-proficient">NLTK</span>
                   <span className="skill-tag-proficient">TensorFlow</span>
-                </div>
-              </div>
-              <div>
-                <h4 className="text-sm font-medium text-text-muted mb-2 uppercase tracking-wide">
-                  Learning
-                </h4>
-                <div className="flex flex-wrap gap-2">
-                  <span className="skill-tag-learning">SpaCy</span>
-                  <span className="skill-tag-learning">PyTorch</span>
+                  <span className="skill-tag-proficient">SpaCy</span>
+                  <span className="skill-tag-proficient">PyTorch</span>
                 </div>
               </div>
             </div>
